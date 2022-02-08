@@ -15,8 +15,12 @@ This project will make you sort data on a stack, with a limited set of instructi
   + `./push_swap [arguments]`
   
   Examples: 
-    + `./push_swap 2 1 3 6 5 8`
-    + `ARG="4 67 3 87 23"; ./push_swap $ARG | wc -l`
+```c
+./push_swap 2 1 3 6 5 8
+```
+```c
+ARG="4 67 3 87 23"; ./push_swap $ARG | wc -l
+```
 
 ## Mandatory part
 You are allowed to use the following functions:
@@ -36,35 +40,35 @@ The goal is to sort in ascending order numbers into stack a.
 
 To do this you have the following operations at your disposal:
 
-`sa` : swap a - swap the first 2 elements at the top of stack a. Do nothing if there
+>`sa` : swap a - swap the first 2 elements at the top of stack a. Do nothing if there
 is only one or no elements)
 
-`sb` : swap b - swap the first 2 elements at the top of stack b. Do nothing if there
+>`sb` : swap b - swap the first 2 elements at the top of stack b. Do nothing if there
 is only one or no elements)
 
-`ss` : sa and sb at the same time
+>`ss` : sa and sb at the same time
 
-`pa` : push a - take the first element at the top of b and put it at the top of a. Do
+>`pa` : push a - take the first element at the top of b and put it at the top of a. Do
 nothing if b is empty
 
-`pb` : push b - take the first element at the top of a and put it at the top of b. Do
+>`pb` : push b - take the first element at the top of a and put it at the top of b. Do
 nothing if a is empty
 
-`ra` : rotate a - shift up all elements of stack a by 1. The first element becomes
+>`ra` : rotate a - shift up all elements of stack a by 1. The first element becomes
 the last one
 
-`rb` : rotate b - shift up all elements of stack b by 1. The first element becomes
+>`rb` : rotate b - shift up all elements of stack b by 1. The first element becomes
 the last one
 
-`rr` : ra and rb at the same time
+>`rr` : ra and rb at the same time
 
-`rra` : reverse rotate a - shift down all elements of stack a by 1. The last element
+>`rra` : reverse rotate a - shift down all elements of stack a by 1. The last element
 becomes the first one
 
-`rrb` : reverse rotate b - shift down all elements of stack b by 1. The last element
+>`rrb` : reverse rotate b - shift down all elements of stack b by 1. The last element
 becomes the first one
 
-`rrr` : rra and rrb at the same time
+>`rrr` : rra and rrb at the same time
 
 ## Bonus part
 Write a program named checker, which will get as an argument the stack a formatted as a list of integers. The first argument should be at the top of the stack
