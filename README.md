@@ -18,23 +18,23 @@ This project will make you sort data on a stack, with a limited set of instructi
     + `./push_swap 2 1 3 6 5 8`
     + `ARG="4 67 3 87 23"; ./push_swap $ARG | wc -l`
 
-## Global rules
-+ Global variables are forbidden.
-+ Within your mandatory part you are allowed to use the following functions:
+## Mandatory part
+You are allowed to use the following functions:
   + `write`
   + `read`
   + `malloc`
   + `free`
   + `exit`
 
-## Mandatory part
-+ The game is composed of 2 stacks named a and b.
-+  To start with:
-  +  the stack a contains a random amount of negative and/or positive numbers
-which cannot be duplicated.
+The game is composed of 2 stacks named a and b.
+
+To start with:
+  +  the stack a contains a random amount of negative and/or positive numbers which cannot be duplicated.
   + b is empty
-+  The goal is to sort in ascending order numbers into stack a.
-+  To do this you have the following operations at your disposal:
+
+The goal is to sort in ascending order numbers into stack a.
+
+To do this you have the following operations at your disposal:
 
 `sa` : swap a - swap the first 2 elements at the top of stack a. Do nothing if there
 is only one or no elements)
